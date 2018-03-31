@@ -1,0 +1,6 @@
+framework module Pods_SkyWalkAR {
+  umbrella header "Pods-SkyWalkAR-umbrella.h"
+
+  export *
+  module * { export * }
+}
