@@ -15,6 +15,7 @@ The final product of the application created in App-a-thon'18
 - Firebase - Database
 
 # Contribution and local developement 
-
+- anyone can contribute to the project.
 - to contribute please follow open source contribution guide.
--anyone can contribute to the project, just fork and create a pull request with your changes.
+
+
