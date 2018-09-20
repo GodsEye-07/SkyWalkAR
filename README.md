@@ -2,7 +2,7 @@
 
 # From Team Int-Elligance.
 
-The final product of the application created in App-a-thon'18
+The final product of the application created in App-a-thon 2018
 
 # Preview - 
 
