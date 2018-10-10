@@ -281,7 +281,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let currentPositionOfCamera = orientation + location
         print(currentPositionOfCamera)
         
-        for _ in 1...200{
+        for _ in 1...20{
             
                 xcor.text = String((orientation.x + location.x) - Float(pulsarZ))
                 ycor.text = String((orientation.y + location.y) - Float(pulsarY))
@@ -309,7 +309,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
         }
         previousPoint = currentPosition
-        glLineWidth(50)
+        glLineWidth(250)
     }
     
     
