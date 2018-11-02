@@ -6,6 +6,7 @@ target 'SkyWalkAR' do
   use_frameworks!
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'Firebase/Auth'
 
   # Pods for SkyWalkAR
 

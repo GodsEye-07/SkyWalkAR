@@ -16,6 +16,8 @@
 		2A0A9A8C206F7D0400CB8757 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A9A8B206F7D0400CB8757 /* customButton.swift */; };
 		2A0A9A8E206F7D2400CB8757 /* verctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A9A8D206F7D2400CB8757 /* verctor.swift */; };
 		2A0A9A90206F7D4400CB8757 /* PlanetNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0A9A8F206F7D4400CB8757 /* PlanetNode.swift */; };
+		2A5B0EAC218B959900B6A9EC /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B0EAB218B959900B6A9EC /* loginViewController.swift */; };
+		2A5B0EAE218B95A100B6A9EC /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B0EAD218B95A100B6A9EC /* signupViewController.swift */; };
 		2AFBC70D206F8D5B00666B01 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBC70C206F8D5B00666B01 /* GoogleService-Info.plist */; };
 		2AFBC70F206F8DB200666B01 /* dataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBC70E206F8DB200666B01 /* dataTableViewController.swift */; };
 		2AFBC711206F8E6700666B01 /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBC710206F8E6700666B01 /* customTableViewCell.swift */; };
@@ -34,6 +36,8 @@
 		2A0A9A8B206F7D0400CB8757 /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 		2A0A9A8D206F7D2400CB8757 /* verctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verctor.swift; sourceTree = "<group>"; };
 		2A0A9A8F206F7D4400CB8757 /* PlanetNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNode.swift; sourceTree = "<group>"; };
+		2A5B0EAB218B959900B6A9EC /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		2A5B0EAD218B95A100B6A9EC /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		2AFBC70C206F8D5B00666B01 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AFBC70E206F8DB200666B01 /* dataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTableViewController.swift; sourceTree = "<group>"; };
 		2AFBC710206F8E6700666B01 /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				2AFBC710206F8E6700666B01 /* customTableViewCell.swift */,
 				2AFBC70E206F8DB200666B01 /* dataTableViewController.swift */,
 				2A0A9A8F206F7D4400CB8757 /* PlanetNode.swift */,
+				2A5B0EAB218B959900B6A9EC /* loginViewController.swift */,
+				2A5B0EAD218B95A100B6A9EC /* signupViewController.swift */,
 				2A0A9A7D206F7C3D00CB8757 /* Main.storyboard */,
 				2A0A9A80206F7C3D00CB8757 /* Assets.xcassets */,
 				2A0A9A82206F7C3D00CB8757 /* LaunchScreen.storyboard */,
@@ -121,7 +127,6 @@
 				2A0A9A71206F7C3D00CB8757 /* Frameworks */,
 				2A0A9A72206F7C3D00CB8757 /* Resources */,
 				CD394DA1C82FF9F8C2F11C94 /* [CP] Embed Pods Frameworks */,
-				0246CACF753F538412BB573B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,21 +187,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0246CACF753F538412BB573B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyWalkAR/Pods-SkyWalkAR-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		82269E2ACB946AA4DA79AF68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,12 +212,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SkyWalkAR/Pods-SkyWalkAR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -248,6 +240,8 @@
 				2A0A9A90206F7D4400CB8757 /* PlanetNode.swift in Sources */,
 				2A0A9A8E206F7D2400CB8757 /* verctor.swift in Sources */,
 				2AFBC711206F8E6700666B01 /* customTableViewCell.swift in Sources */,
+				2A5B0EAE218B95A100B6A9EC /* signupViewController.swift in Sources */,
+				2A5B0EAC218B959900B6A9EC /* loginViewController.swift in Sources */,
 				2AFBC70F206F8DB200666B01 /* dataTableViewController.swift in Sources */,
 				2A0A9A78206F7C3D00CB8757 /* AppDelegate.swift in Sources */,
 				2A0A9A8C206F7D0400CB8757 /* customButton.swift in Sources */,
