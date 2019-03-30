@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>270496297804-bfuav1or3riv1bb30bnm7hfhive965mq.apps.googleusercontent.com</string>
+	<string>628517890401-g44bm4vg5rf4a5ln27r6mahemis3189j.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.270496297804-bfuav1or3riv1bb30bnm7hfhive965mq</string>
+	<string>com.googleusercontent.apps.628517890401-g44bm4vg5rf4a5ln27r6mahemis3189j</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBM0hYuOWk5vJGmAk0W6EephGiwuDWHOaI</string>
+	<string>AIzaSyCuNPwujthap9YB0i271kjUGlspq6wFsr8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>270496297804</string>
+	<string>628517890401</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Ayush.SkyWalkAR</string>
+	<string>com.Ayush-Verma.SkyWalkAR</string>
 	<key>PROJECT_ID</key>
-	<string>skywalkar-26226</string>
+	<string>skywalkar-fd7c6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>skywalkar-26226.appspot.com</string>
+	<string>skywalkar-fd7c6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:270496297804:ios:afd8cf5398def617</string>
+	<string>1:628517890401:ios:bb8c00a5604334aa</string>
 	<key>DATABASE_URL</key>
-	<string>https://skywalkar-26226.firebaseio.com</string>
+	<string>https://skywalkar-fd7c6.firebaseio.com</string>
 </dict>
 </plist>
