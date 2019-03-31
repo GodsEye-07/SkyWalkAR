@@ -45,12 +45,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let position1 = SCNVector3(0,0,-0.58)
         let position2 = SCNVector3(-1.27,-0,1.08)
-        let position3 = SCNVector3(1.18,0,-1.5)
+        let position3 = SCNVector3(-2.18,0,-1.7)
         let position4 = SCNVector3(-5.32,0,-2.28)
-        let position5 = SCNVector3(8.12,0,-3.50)
+        let position5 = SCNVector3(6.12,0,-3.50)
         let position6 = SCNVector3(-30.22,0,-5.30)
-        let position7 = SCNVector3(10.42,0,-7.77)
-        let position8 = SCNVector3(-20.50,0,-11.09)
+        let position7 = SCNVector3(10.42,0,-3.77)
+        let position8 = SCNVector3(-13.50,0,-9.09)
         let position9 = SCNVector3(x: -0.3, y: -0.3, z: -0.3)
         
         
@@ -79,7 +79,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         
         //random stars.
-        for _ in 1...250{
+        for _ in 1...400{
             
             let lowerValue = -15
             let upperValue = 5
@@ -96,20 +96,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let currentCameraPosition:SCNVector3 = (sceneView.pointOfView?.position)!
         print(currentCameraPosition)
         
-        
-        
     }
     
     func Stars(at position:SCNVector3) -> SCNNode{
         
         
-        let random = SCNSphere(radius: 0.03)
+        let random = SCNSphere(radius: 0.025)
         let material = SCNMaterial()
         material.diffuse.contents = UIColor(red: 224.0, green: 224.0, blue: 224.0, alpha: 1.0)
         random.firstMaterial = material
         let designNode = SCNNode(geometry:random)
         designNode.position = position
-        let action = SCNAction.rotate(by: 1 * CGFloat((Double.pi)/180), around: SCNVector3(x:0, y:1, z:0), duration: 8)
+        let action = SCNAction.rotate(by: 1 * CGFloat((Double.pi)/180), around: SCNVector3(x:0, y:1, z:0), duration: 0)
         let repeatAction = SCNAction.repeatForever(action)
         designNode.runAction(repeatAction)
         return designNode
